@@ -1,0 +1,531 @@
+**A program is a set of instructions
+
+1.programming language -
+programming language is the mode through which the user/programmer which can interact with the computer which deals
+with the certain sets of instructions so that the desired task will accomplished.
+
+2.what are the different programming languages-
+Mll(machine level language)-binary
+All(assembly level language)-add ->Assembler
+Hll(high level language)-symbolic->compiler
+
+3.What is a compiler-
+software which converts Hll into Mll.
+
+4.Assembler-
+it is a software which converts All to Mll.
+
+5.What is an object file-
+file which gets generated after the compilation process.
+the object file is an incomplete file.
+the object file have the extension as .obj
+it cannot be executed as it is incomplete.
+
+6.What is an executable file?
+an executable file is a file which gets generated after the process of linking.
+the executable file is complete file .
+it will has the exetension as .exe
+executable file is a combination of obj file and lib files.
+executable files can be easily executed.
+
+7.What is a Linker?
+Linker is a software which is used to link obj file with the lib files.
+Linker will generate the executable file.
+
+8.What is Loader?
+A Loader is s/w which loads the exe file from harddisk on to the ram for execution.
+
+**Platform dependency-
+it is the feature where the program is written and compile in one platform cannot be executed in any other platform
+
+9.What is a platform?
+the platform is a combination of h/w and s/w.
+
+Write a note on OS.
+the os heavy weighted s/w which is also termed as the Boss of the computer.
+the os is the s/w which grants the permissions for execution of any task in the system.
+
+*Object orientation--
+perspective towards real world entity(object).
+
+**What do you mean by object orientation??
+->->PRINCIPLES
+->world is a collection of objects.
+->no object is useless,every object is useful.
+->Every object is under constant interaction and no object is isolated.
+->Every object is belongs to a type and the type in object orientation is called as "The Class". the class does not exist
+in reality it is jut a blueprint.
+->Every object has something and every object does smtg.
+
+Example--------------------
+class Car
+
+**properties
+name    KIA
+color   black
+cost    8,000,000
+Airbags 4
+
+**Activity
+void move(){
+}
+
+void reverse(){
+}
+
+void turn(){
+}
+
+
+**Syntax
+program1.java
+
+class Program1
+{
+public static void main(string arg())
+  {
+	sop("Hello World");
+	}
+}
+
+**variables are the storage units where we can store some info.
+in java variables are broadly classified into 2 cat.
+1.Instance variables 
+2.local variables
+
+*Instance variables--
+variables which are present inside the class.
+These variables are created when the object is created.
+Instance variables will get the default values by jvm.
+Instance variables will get allocated on the heap memory
+
+*Local variables--
+variables which are presented inside a method or a fun is called as local var.
+these are created when the method in which the local var. are present is executed.
+Local variables do not get default values.
+these are present inside the stack segment.
+
+**Object Creation--
+In java if we have to create to an obj then we must make use of the "new" keyword.
+Whenever the new keyword is used the jvm will get activated and created the memory for the obj
+upon creation of the obj all the instance var will be getting the memory along with the default values
+
+**Loops in java
+in java if we have to execute a set of statements multiple times then we will make use of the concept of loops.
+in java we broadly make use of 4 diff types of loops
+1.For loop
+--> the for loop contains the 4 imp steps
+        1.Initialization
+	2.condition
+        3. logic of loop
+        4.incr/decr	
+
+indentation-- ctrl+i
+align--ctrl+shift+f
+autocmpl--ctrl+space
+import classes--ctrl+shift+o
+
+
+2. while loop 
+it is also called as "as long as " loop
+the execution of while loop takes place in the following steps
+  i.initialization: initialization should be done outside the loop
+  ii.condition
+  iii. logic of the loop
+  iv. incr/decr : this must be done along with the logic of the loop
+  
+3. do while loop
+ this is a spl loop bcz no matter what the condition is i.e whether it is satisfied or not the loop will get executed at least once.
+ 1.Initialization--
+ must be written outside the loop 
+ 2.logic of the loop
+ 3.Incrementation /decr
+ 4.condition check
+
+**typecasting--
+it is the process of converting one type of data into another type of data.
+it is broadly classified into 2 categories
+ 1.implicit 
+ 2.explicit
+ 
+
+**Implicit typecasting
+it is the process of converting one type of data into another type of data implicitly / internally
+by the compiler.
+**explicit 
+it is the process of converting one type of data into another type of data by explicit specification.
+
+**numeric type promotion
+
+---------------------------------------------
+**Conditional statement:
+## Loops ::
+these are the set of statements which imposes certain conditions on the program to perform specific set of oper.
+In java we have 3 diff conditional statements if condition, else if condition,else condition.
+
+**syntax
+if(condition)
+{
+---
+}
+else if(condition)
+{
+--
+}
+else{
+---
+}
+
+Array Approach
+an array is defined as the homogeneous colln of info
+in java array is treated as an object
+creation of array:
+   int arr[]=new int[5]
+--storing of value:
+	
+
+Advantages of arrays:
+1.creation of array is simple.
+2.Addition of data in array is simple 
+3. retrieval of data is simple.
+
+Disadvantages of Arrays:
+1.arrays cannot store heterogeneous type of data.
+2.arrays can neither increase or decrease in size once it is created.
+3.Arrays require countinous blocks of memory.
+In order to overcome these disadvantanges of arr. collection framework was introduced by
+Jashwa bouch
+
+
+## Introduction to Strings :
+strings are represented as series of characters.
+string in java is a built inclass present inside java.lang package.
+strings in java does not end with a null character.
+strings in java are classsified into 2 cate. 
+  1.mutable strings
+  2.immutable strings
+  
+
+**Immutable strings--
+-->these are the types of strings which can not be change once it is created.
+-->strings in java are immutable by default.
+-->immutable strings are represented using string class.
+-->there are two ways in which we can create the strings in java :
+		1.Using a literal
+		2.like an object.
+
+RAM
+|-->stack segment==>1.local variables
+		    2.Activation records
+|-->static segment==>1.static variables
+		     2.static blocks
+                     3.static methods
+
+|-->Heap segment==>1.Instance variables ==>string pool==>1.constant pool-no duplicate-literals
+                                                         2.non constant pool-duplicate-objects
+		   2.objects.
+|-->code segment==>Source code 
+
+**Equalsmethod Equals():
+1. Input strings
+2.written type boolean
+3.Description :
+  this method evaluate the two strings and check for their equality.
+#EqualIgnoreCase : ignore the case sensetivity.
+
+== -->this operator is used as comparision operator to check if the contents of the two strings belongs to the same addrs.
+
+= -->assignment.
+
+
+as seen in tne above programe the immutable strings cannot be altered once they are created.
+In order to facilitate the modification of strings once they are created java provides mutable strings.
+
+*Mutable strings:
+these are the category of strings where we can change the string even after its creation.
+In order to represent mutable strings java provides StringBuffer and StringBuilder classes.
+
+***Static Segment
+-->static segment is a division on ram which contains static variables, static Blocks, Static methods
+-->Each of the above mentioned members can be identify easily as they will be associated with Static keyword.
+-->whenever the program is given for execution the jvm will call the class loader who will identify all the Static members from the program and allocate them to the Static seg.
+
+***Static segments are called as the VIP segment.
+The advantage of having static members is that the static members can be executed without creating the object of the class.
+
+
+		
+Main method is the spl type of Static method which executed automatically.
+the Static members can be access directly by className.
+In java whenever a variable is made as Static there is a wrong pressumption that the variable value cannot be change bt as per the norms of java the Static variables can be changable.
+Unique pt about the Static variable is that no matter how many Objects are created for a particular class which contains a Static variables(properties) the memory for the Static variable will be allocated only once.
+
+**Pillars of object orientation
+-->1.Encapsulation
+     it referrs to the process of providing security to the most important component of an object.
+     It can be achieved by making use of the 3 imp rules
+	1.Use private members
+	2.use setters and getters 
+	3.If required make use of conditional statement. 
+
+-->Shadowing problem
+It is a scenario where the compiler is under confusion in identifying the diff between the Local variables and Instance 	`variables as a result the compiler will be printing the default values
+The solution for the shadowing problem is that "this" keyword along with the instance variables,which helps the compiler to differentiate beetween instance and local variables
+this.name-->instance variable.
+
+***Constructor
+a constructor is a spl type of setter which has the name same as the class name,and it does not have any return type 
+Constructors are used for instantiation of an object.
+Constructors in java will not participate in inheritence.
+the first line inside the constructor will always be the call for super().
+there are two categories of constructors 
+1.Parameterised constructor
+2.zero parameterized constructor
+constructors from one class will intiate a call to the parent class constructor this process is called as "Constructor chaining".
+
+Constructor inside a class will be callinng another constructor inside the same class this process is called as "Local chaining".
+
+Orphan Class :
+An orphan class is a class which does not have any parent.
+these classes will be adopted by the object class which is the root class for all the classes in java.
+Construstor chaining can be performed by making use of super().
+
+Local chaining can be performed by making use of this() call.
+both this() and super() expects to be the first line inside the constructor which is practically impossible.
+hence when super method is used we cannot make use of this() call and viceversa.
+We can have parameters being passed for super() call and this() call
+But when we are dealing with orphan classes it is mandatory that making use of zero parameterized super() call.
+
+Orphan class is adopted by the obj.
+Obj class is located in the lang package.
+object get default values after the execution of constructor by jvm.
+**default parent--> extend object.
+
+**Inheritence 
+it is refers to heirarchy of classes.
+Inheritence promots parent child relationship.
+
+Advantages of using Inheritence-->
+1.Promotes Reusability of code.
+2.reduces the coding time.
+3.Brings profit to the org.
+
+#Note  >Inheritence can be achieved by making use of exetend keyword.
+rules of Inheritence.
+1.Private members cannot be Inherited.
+2.constructors cannot be Inherited.
+3.Multiple Inheritence is not supported in java.
+bcoz it leads to diamond shape problem.
+
+Disclaimer :
+
+class A{
+}
+class B{
+}
+class C extends A extends B
+{
+
+}
+
+
+4.Though multiple inheritence is not supported in java multilevel inheritence is supported.
+5.Cyclic inheritence is not permitted in java.
+
+**Different types of methods in Inheritence
+1.Inherited methods:
+these are the type of methods in inheritence where the methods are inherited from the parent class and use as it is in the child class.
+2.OverWritten methods:
+these are the type of methods in the inheritence where a method is inherited from the parent class and modified according to the need
+in the child class.
+3.Specialized methods:
+these are the type of methods in inheritence where the method is not inherited from the parent class rather it is available only within the child class.
+these spl methods cannot be access using the parent type reference.
+
+**Parent type Reference to Child type objects (Polymorphism)
+public class Launch{
+Cargoplane cp= new Cargoplane();
+PassengerPlane pp = new PassengerPlane
+FighterPlane fp = new FighterPlane()
+
+
+**Polymorphic approach in condensed form:
+class Airport
+{
+  void permit(plane p)
+{
+  p.takeoff();
+  p.fly();
+  p.land();
+ }
+}
+
+Airport a = new Airport();
+
+System.out.print
+
+
+**Abstraction
+Abstraction is the process of hiding the implementation in the parent class and forcing the child class to provide implementation.
+Abstraction can be achieved by using abstract keyword.
+Abstraction can be applied for the class and methods only.
+a method without any implementation with only signature is called as Abstract method.
+Abstract methods will always be associated with Abstract keyword.
+A class can be called as Abstract class provided the class contains atleast one abstract method.
+We cannot create the object of an abstract class bcoz Abstract class is an incomplete class as it contains unimplemented methods.
+Abstract will always be associated with abstract keyword.
+If a class is partially providing the implementation for the unimplemented methods in the parent class then the class must be made as abstract.
+though we cannot create the object of an abstract class directly we can indirectly the object of the abstract class using ananymous inner types 
+Using abstraction we will be able to enforce the child class to describe a set of activity independently
+
+Before Java 8 an interface was defined as the collection of public abstract methods.
+after java 8 an interface is not just a collection of public abstract methods rather it also contains non abstract methods like default and static methods 
+We cannot create object of an interface directly.
+we can create it with ananymous inner types.
+
+Rules of Interface promotes polymorphism
+Interface can be achieved by making use of implements keyword 
+though we cannot achieve multiple inheritence using extends keyword we can achieve multiple inheritence using implements keyword.
+In java one interface cannot implement another interface bcoz interface contains unimplemented methods 
+in java we have extend one interface from another interface 
+Any method i.e present inside an interface is called public abstract
+Any variable present inside an interface is made as public static final
+If a class extends another class as well as implements an interface then the order in which it must be represented is first extends then implements
+In java we can have empty interface such interface we call it as tag interface 
+Though we cannot create the object of an interface directly we can certainly create the reference directory.
+
+##NOTE
+final keyword:
+1. when we use final keyword on a variable then we cannot change its value
+2.If final keyword is used for a method then we cannot override that method.
+3.If final keyword used on a class then the class cannot be inherited.
+
+Method overloading:
+In method overloading nothing is getting overloded it is an illusion in mind of programmer that one method is performing multiple task but in reality there are independent methods in same name performing specific task.
+In method overloading we can have :
+1. Same name for all the methods
+2. Same number of parameters
+3. The order of an parameter must not be same
+
+##Note :
+In case of method overloading Return type does not have any value(Prominence)
+
+Method overloading is also called as compile time Polymorphism
+@Association
+-In java we dont 
+
+ 
+
+
+
+
+this is also termed as aggregation.
+In the UML the aggregation will be dependent on hollow diamond
+In case of tightly bound has a relationship if the enclosing object does not exist in reality then the associated objects that are tightly bound would also not exist.
+this is also termed as composition.
+In UMlthe composition can be detected by making use of a solid diamond
+
+Any object inside the heap segment which does not contain a handle is treated as garbage
+On the heap seg for every few microseconds the garbage collector will keep scanning the entire segment to find if there are any garbage.
+If he findsany garbage it will immediately be removed from the memory seg.
+
+**Exception --<>
+1.checked exception-SQl,filenotfound
+2.Unchecked exception-nullpointer,arithmetic,Arrayindexoutof bound
+Errors occur during the compilation time and will not let the program to execute
+Errors can be of the types /syntactical errors which are the mistakes in the program written by the programmer
+Exceptions are the mistakes that are done by the end user due tpo faulty input 
+Exceptions occured during the execution time and will give an abnormal output
+##Exceptions handling
+it is the process of handling the Exceptions that might get generated during the course of program.
+Exceptions handling can be performed in 3 ways
+1. try and catch lock
+2. ducking of Exceptions 
+3. Rethrowing of Exceptions 
+
+##Note
+In java Exceptions can be classified into two categories :
+
+1.checked Exceptions : these are the type of Exceptions that are noticed during compilation time.
+eg.SQl Exceptions and filenotfound Exceptions 
+2.Unchecked Exceptions : these are the type of Exceptions that occurs during the execution time.
+eg. nullpointer Exceptions , Arithmetic Exceptions , ArrayIndexOutOfBound Exceptions .
+
+*Generating the Exceptions without Exceptions handeling mechanism
+Handeling the Exceptions :
+
+1.Using try catch block:
+
+All the statements that are suspected to be critical statement must be stay inside the try block
+Critical stmts are stmts which are bound to cause an Exception.
+Every try block will be asociated with one or more catch blocks.
+inside the catch block the Exceptions i.e generated in the try will be caught and handled.
+
+*Problem with single catch block:
+
+
+Why is not a pure Object Oriented ?
+In java we have all the object orientation pillars and java also follows principles of object orientation, it is still considered as not 100% 
+object orientation.
+because in java the datatypes like int,float,char,boolean,double,long which are considered as primitive datatypes.
+Deprecated means class-it was there in previous verions bt not in latest.
+
+Collection :
+
+1.Arraylist:
+arraylist class is present inside java.util package and it overcomes two imp disadvantage of arrays i.e using arraylist we can store heterogeneous type of data and we can alter the size of the arraylist as per the scenario.
+but one of the disadvantage of array still persist in arraylist.
+arraylist cannot make use of dispersed memory blocks
+
+**LinkedList
+Linkedlist is the collection framework class which is present inside java.util package.
+Linkedlist can overcome all the disadvantages of array data structure.
+Linkedlist is more efficient than arraylist in performing the data addition in the intermediate position.
+Linkedlist internally make use of Doubly Linkedlist data structure.
+Linkedlist makes use of dispersed memory blocks
+
+
+@Array Dequeue:
+ Array dequeue overcomes couple of disadvantages of arrays and it is more efficient than arraylist
+
+
+
+
+
+
+
+
+
+
+
+every data i.e stored inside the map in association with the key this key can be utilised for accesing the respective data
+th
+
+they are hashmap,linkhashmap and tree 
+
+arraylist-->list interface
+hashset-->set interface
+dequeue--->queue interface
+
+Thread refers to a small task in complex operation .
+It can also be defined as a sequence of execution.
+In java thread is a built in class which is present inside java.lang package.
+a thead will contain 3 imp information.
+1.name of the thread 
+2.priority of the thread.
+3.method to which the thread is associated.
+Example:
+
+**Race condition:
+this is a scenario where multiple threads are fighting with each other to get the cpu time for execution
+this scenario in technical term is called as race condition
+race condition is overcome by daemond thread.
+
+solution to race condition:daemon threads can be used to provide solutions for race condition.
+there are few set of rules that has to be followed :
+1. Identify the primary and secondary threads.
+2.Use infinite for loop for the secondary operations.
+3.For the secondary threads set the setDaemon() to true.
+4.Set the priority for secondary threads greater than 7.
+
+Different states of threads 
